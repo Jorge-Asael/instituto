@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Person Index</title>
+</head>
+<body>
+    <p>Hello Person !!
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="person : ${persons}">
+            <td th:text="${person.name}"></td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
